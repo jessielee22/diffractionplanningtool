@@ -10,16 +10,52 @@
   </head>
   <body>
   <!-- Put Python code inside the the <py-script> tag -->
-    <py-script>display("Hello World!")</py-script>
+    <py-script>display("helloworld;")</py-script>
     <script>
-      // Ask user for seven parameters
-var param1 = prompt("Enter detector:");
-var param2 = prompt("Enter energy:");
-var param3 = prompt("Enter material:");
-var param4 = prompt("Enter sample to detector distance:");
-var param5 = prompt("Enter lattice parameters:");
-var param6 = prompt("Enter parameter 6:");
-var param7 = prompt("Enter parameter 7:");
+    // Create textboxes for user input
+var input1 = document.createElement("input");
+input1.type = "text";
+input1.placeholder = "Parameter 1";
+document.body.appendChild(input1);
+
+var input2 = document.createElement("input");
+input2.type = "text";
+input2.placeholder = "Parameter 2";
+document.body.appendChild(input2);
+
+var input3 = document.createElement("input");
+input3.type = "text";
+input3.placeholder = "Parameter 3";
+document.body.appendChild(input3);
+
+var input4 = document.createElement("input");
+input4.type = "text";
+input4.placeholder = "Parameter 4";
+document.body.appendChild(input4);
+
+var input5 = document.createElement("input");
+input5.type = "text";
+input5.placeholder = "Parameter 5";
+document.body.appendChild(input5);
+
+var input6 = document.createElement("input");
+input6.type = "text";
+input6.placeholder = "Parameter 6";
+document.body.appendChild(input6);
+
+var input7 = document.createElement("input");
+input7.type = "text";
+input7.placeholder = "Parameter 7";
+document.body.appendChild(input7);
+
+// Retrieve user input
+var param1 = input1.value;
+var param2 = input2.value;
+var param3 = input3.value;
+var param4 = input4.value;
+var param5 = input5.value;
+var param6 = input6.value;
+var param7 = input7.value;
 
 // Display the entered parameters
 console.log("Parameter 1: " + param1);
@@ -29,6 +65,8 @@ console.log("Parameter 4: " + param4);
 console.log("Parameter 5: " + param5);
 console.log("Parameter 6: " + param6);
 console.log("Parameter 7: " + param7);
+
+
 
     </script>
   </body>
