@@ -17,6 +17,28 @@ var input1 = document.createElement("input");
 input1.type = "text";
 input1.placeholder = "Detector";
 document.body.appendChild(input1);
+      // Define the options for Parameter 1 dropdown
+var param1Options = ["Option 1", "Option 2", "Option 3"]; // Replace with your desired options
+
+// Create a dropdown input for Parameter 1
+var dropdown1 = document.createElement("select");
+dropdown1.name = "parameter1";
+document.body.appendChild(dropdown1);
+
+// Add options to the dropdown
+for (var i = 0; i < param1Options.length; i++) {
+  var option = document.createElement("option");
+  option.value = param1Options[i];
+  option.text = param1Options[i];
+  dropdown1.appendChild(option);
+}
+
+// Retrieve user input from the dropdown
+var param1 = dropdown1.value;
+
+// Display the selected parameter
+console.log("Parameter 1: " + param1);
+
 
 var input2 = document.createElement("input");
 input2.type = "text";
