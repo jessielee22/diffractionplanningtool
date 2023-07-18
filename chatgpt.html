@@ -22,8 +22,6 @@
       <p>Enter the required parameters below to calculate your diffraction experiment results:</p>
       <form>
   
-        <label for="Detector">Detector:</label>
-        <input type="text" id="Detector" name="Detector" placeholder="Select a detector">
         <label for="detector-select">Select a detector:</label>
         <select id="detector-select" name="detector-select">
           <option value="eiger500">Eiger 500</option>
@@ -34,6 +32,17 @@
 
         <label for="material">Material:</label>
         <input type="text" id="material" name="material" placeholder="Enter the material">
+
+         <label for="Material-select">Select a default material:</label>
+        <select id="Material Select" name="Material Select">
+          <option value="Fe">Fe</option>
+          <option value="Ces">CeS</option>
+          <option value="Cu">Cu</option>
+          <option value="Quartz">quartz</option>
+        </select>
+
+        <label for="Energy">Energy:</label>
+        <input type="text" id="Energy" name="Energy" placeholder="Enter Energy">
   
   
         <label for="distance">Distance:</label>
