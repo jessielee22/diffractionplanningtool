@@ -55,7 +55,7 @@ article {
 /* Style the footer */
 footer {
   background-color: #777;
-  padding: 10px;
+  padding: 100px;
   text-align: center;
   color: white;
 }
@@ -101,12 +101,12 @@ input1.placeholder = "Detector";
 document.body.appendChild(input1);
       
 // Define the options for Parameter 1 dropdown
-var param1Options = ["Eiger", "Dexela_horz", "Dexela_vert,Eiger_Ge"]; // Replace with your desired options 
+var param1Options = ["Eiger", "Dexela_horz", "Dexela_vert , Eiger_Ge"]; // Replace with your desired options 
 // Create a dropdown input for Parameter 1
 var dropdown1 = document.createElement("select");
 dropdown1.name = "Detector";
 document.body.appendChild(dropdown1);
-  <div style="margin-bottom: 10px;">
+  <div style="margin-bottom: 20px;">
   Parameter 2
 </div>
 
@@ -125,7 +125,9 @@ var param1 = dropdown1.value;
 input1.type = "text";
 input1.placeholder = "Detector";
 document.body.appendChild(input1);
-
+var parameterContainer = document.querySelector(".parameter");
+parameterContainer.appendChild(input1);
+  
 var input2 = document.createElement("input");
 input2.type = "text";
 input2.placeholder = "Material";
@@ -152,7 +154,7 @@ document.body.appendChild(input6);
 
 var input7 = document.createElement("input");
 input7.type = "text";
-input7.placeholder = "Parameter 7";
+input7.placeholder = "space group";
 document.body.appendChild(input7);
 
 // Retrieve user input
