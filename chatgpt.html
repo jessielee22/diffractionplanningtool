@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>User Interface Proposal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* CSS styles omitted for brevity */
+</style>
+</head>
+<body>
+
+<h2>User Interface Proposal</h2>
+<p>An interactive web-based tool for diffraction experiment planning at FAST.</p>
+
+
+<header>
+  <h2>HEXRDGUI</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.chess.cornell.edu/beamlines-focus-fast">About</a></li>
+      <li><a href="#">more on success of beamline science </a></li>
+      <li><a href="#">About CHESS</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About HEXRDGUI</h1>
+    <p>Diffraction experiments help with understanding how microstructures of materials impact its mechanical properties</p>
+    <p> The understanding of these mechanical properties leads us to better understanding how to build stronger, safer structures.</p>
+  </article>
+</section>
+
+<!-- Place JavaScript code before the footer -->
+<script>
+// Create textboxes for user input
+var input1 = document.createElement("input");
+input1.type = "text";
+input1.placeholder = "Detector";
+document.body.appendChild(input1);
+
+var input2 = document.createElement("input");
+input2.type = "text";
+input2.placeholder = "Material";
+document.body.appendChild(input2);
+
+var input3 = document.createElement("input");
+input3.type = "text";
+input3.placeholder = "Lattice Type";
+document.body.appendChild(input3);
+
+var input4 = document.createElement("input");
+input4.type = "text";
+input4.placeholder = "Energy (keV)";
+document.body.appendChild(input4);
+
+var input5 = document.createElement("input");
+input5.type = "text";
+input5.placeholder = "Sample to Detector Distance";
+document.body.appendChild(input5);
+
+var input6 = document.createElement("input");
+input6.type = "text";
+input6.placeholder = "Detector Clusters";
+document.body.appendChild(input6);
+
+var input7 = document.createElement("input");
+input7.type = "text";
+input7.placeholder = "Space Group";
+document.body.appendChild(input7);
+
+// Create a dropdown input for Parameter 1
+var dropdown1 = document.createElement("select");
+dropdown1.name = "Detector";
+document.body.appendChild(dropdown1);
+
+// Define the options for Parameter 1 dropdown
+var param1Options = ["Eiger", "Dexela_horz", "Dexela_vert", "Eiger_Ge"]; // Replace with your desired options
+
+// Add options to the dropdown
+for (var i = 0; i < param1Options.length; i++) {
+  var option = document.createElement("option");
+  option.value = param1Options[i];
+  option.text = param1Options[i];
+  dropdown1.appendChild(option);
+}
+
+// Retrieve user input
+var param1 = input1.value;
+var param2 = input2.value;
+var param3 = input3.value;
+var param4 = input4.value;
+var param5 = input5.value;
+var param6 = input6.value;
+var param7 = input7.value;
+
+// Display the entered parameters and dropdown value
+console.log("Parameter 1: " + param1);
+console.log("Parameter 2: " + param2);
+console.log("Parameter 3: " + param3);
+console.log("Parameter 4: " + param4);
+console.log("Parameter 5: " + param5);
+console.log("Parameter 6: " + param6);
+console.log("Parameter 7: " + param7);
+console.log("Dropdown Value: " + dropdown1.value);
+</script>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #B31B1B;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #B31B1B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
