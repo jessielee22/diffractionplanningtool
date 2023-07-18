@@ -83,8 +83,8 @@ footer {
   <nav>
     <ul>
       <li><a href="https://www.chess.cornell.edu/beamlines-focus-fast">About</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href="#">more on success of beamline science </a></li>
+      <li><a href="#">About CHESS</a></li>
     </ul>
   </nav>
   
@@ -97,7 +97,6 @@ footer {
 <script> // Ask user for seven parameters
 // Create textboxes for user input
 var input1 = document.createElement("input");
-input1.type = "text";
 input1.placeholder = "Detector";
 document.body.appendChild(input1);
       
@@ -118,38 +117,33 @@ for (var i = 0; i < param1Options.length; i++) {
 
 // Retrieve user input from the dropdown
 var param1 = dropdown1.value;
-
-
-
-
-  
   var input1 = document.createElement("input");
 input1.type = "text";
-input1.placeholder = "Parameter 1";
+input1.placeholder = "Detector";
 document.body.appendChild(input1);
 
 var input2 = document.createElement("input");
 input2.type = "text";
-input2.placeholder = "Parameter 2";
+input2.placeholder = "Material";
 document.body.appendChild(input2);
 
 var input3 = document.createElement("input");
 input3.type = "text";
-input3.placeholder = "Parameter 3";
+input3.placeholder = "Lattice Type";
 document.body.appendChild(input3);
 
 var input4 = document.createElement("input");
 input4.type = "text";
-input4.placeholder = "Parameter 4";
+input4.placeholder = "Energy (keV)";
 document.body.appendChild(input4);
 
 var input5 = document.createElement("input");
 input5.type = "text";
-input5.placeholder = "Parameter 5";
+input5.placeholder = "Sample to Detector Distance";
 document.body.appendChild(input5);
 
 var input6 = document.createElement("input");input6.type = "text";
-input6.placeholder = "Parameter 6";
+input6.placeholder = "Detector Clusters";
 document.body.appendChild(input6);
 
 var input7 = document.createElement("input");
@@ -175,6 +169,7 @@ console.log("Parameter 5: " + param5);
 console.log("Parameter 6: " + param6);
 console.log("Parameter 7: " + param7);
 </script>
+
 
 <footer>
   <p>Footer</p>
