@@ -1,1 +1,1 @@
-this tool allows for the 
+this tool allows for the representation of a diffraction planning tool for the Cornell High Energy Synchrotron Source Forming and Shaping Technology beamline, with a goal to maximize efficiency for experiment planning 
